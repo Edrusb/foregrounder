@@ -35,7 +35,7 @@ int trapped = 0;          /* set by sighandler */
 int main(int argc, char* argv[], char** env)
 {
     if(argc != 3
-       && (argc == 4 && strcmp("die", argv[3]) != 0))
+       || (argc == 4 && strcmp("die", argv[3]) != 0))
 	return usage(argv[0]);
     else
 	return action(argv[1], argv[2], env, argc == 4);
