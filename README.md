@@ -5,8 +5,9 @@ so they can run in background, while foregrounder holds the container alive as p
 Upon customer stop request, foregrounder will run the specified command to properly stop the daemons.
 
 # Requirements
-- Ansi C compiler 
-- make program
+- Ansi C compiler (clang, gcc)
+- linker (ld)
+- the "make" program
 
 # Compilation
 run "make" 
